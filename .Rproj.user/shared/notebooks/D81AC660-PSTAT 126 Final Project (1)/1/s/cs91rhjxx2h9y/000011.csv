@@ -1,4 +1,0 @@
-"0",""
-"0","boxplot(price ~ color, "
-"0","        data = sample_df, "
-"0","        main = ""Price by Color"")"

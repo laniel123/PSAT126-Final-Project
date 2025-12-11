@@ -3,7 +3,7 @@
     "path": "~/Desktop/untitled folder/PSTAT 126 Final Project.Rmd",
     "project_path": "PSTAT 126 Final Project.Rmd",
     "type": "r_markdown",
-    "hash": "2043190986",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1765422567665.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "305,0",
-        "scrollLine": "300",
-        "last_setup_crc32": "e657e67c3c17ecc3"
+        "cursorPosition": "45,32",
+        "scrollLine": "22",
+        "last_setup_crc32": ""
     },
     "folds": "",
-    "lastKnownWriteTime": 1765422794,
+    "lastKnownWriteTime": 1765423344,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1765422819606,
+    "last_content_update": 1765423613329,
     "read_only": false,
     "read_only_alternatives": []
 }

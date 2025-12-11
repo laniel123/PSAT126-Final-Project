@@ -1,5 +1,0 @@
-"0","filepath <- ""/Users/daniellarson/Downloads/Diamonds Prices2022.csv"" "
-"0","df <- read.csv(filepath)"
-"0",""
-"0","set.seed(777)"
-"0","sample_df <- df[sample(nrow(df), 500), ]"

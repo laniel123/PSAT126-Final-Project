@@ -29,6 +29,9 @@ Requirements: Include at least 2 categorical variables and 3 independent quantit
 
 Select a random sample (must have 500 observations):
 
+
+("Daniels File path /Users/daniellarson/Downloads/Diamonds Prices2022.csv") 
+
 ```{r}
 filepath <- "/Users/daniellarson/Downloads/Diamonds Prices2022.csv" 
 df <- read.csv(filepath)
