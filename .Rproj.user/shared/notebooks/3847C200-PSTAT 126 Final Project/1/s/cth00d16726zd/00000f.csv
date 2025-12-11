@@ -1,3 +1,0 @@
-"0","par(mfrow=c(1,1))"
-"0","log_model <- lm(log(price) ~ carat, data = sample_df)"
-"0",""

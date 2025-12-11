@@ -200,7 +200,7 @@ summary(log_model)
 
 *Note changes*
 
-After log-transforming the response variable, the model shows a modest improvement in fit, with the adjusted R^2 increasing from 0.8502 to 0.8499. The residual standard error is substantially reduced on the log scale (from about 1492 to 0.3885), indicating more stable variance and improved adherence to model assumptions. In both models, the carat coefficient remains highly statistically significant, confirming the strong relationship between carat and price. However, the interpretation of the slope changes: in the transformed model it represents an approximate percentage change in price per unit increase in carat rather than a dollar change. Overall, the log-transformed model provides a better-fitting and more appropriate description of the data, while still preserving the strong relationship between carat and price observed in the original model.
+After log-transforming the response variable, the model shows a modest improvement in fit, with the adjusted R^2 increasng from 0.8443 to 0.8499. The residual standard error is substantially reduced on the log scale (1591 to 0.3897), indicating more stable variance and improved adherence to model assumptions. In both models, the carat coefficient remains highly statistically significant, confirming the strong relationship between carat and price. However, the interpretation of the slope changes: in the transformed model it represents an approximate percentage change in price per unit increase in carat rather than a dollar change. Overall, the log-transformed model provides a better-fitting and more appropriate description of the data, while still preserving the strong relationship between carat and price observed in the original model.
 
 ## 5. Add other variables to the model and assess if the model improves. For step 5, run the code in the background and include all interpretations in the file. For instance, if adding depth to the simple linear regression model (carat and price) increases the adjusted R^2, include it in the model; if it decreases, exclude it. Do not include the code for step 5 in the submitted file; only write the conclusions.
 
@@ -243,7 +243,7 @@ Compute confidence intervals, prediction intervals, and summarize your report cl
 
 ```{r}
 best_model <- lm(log(price) ~ carat + depth + table + color + cut + clarity, data = sample_df)
-summary(bestmodel)
+summary(best_model)
 
 AIC_model <- stepAIC(best_model, 
                           direction = "both",  # Could use "backward" or "forward"
@@ -251,9 +251,7 @@ AIC_model <- stepAIC(best_model,
 #Summary 
 summary(AIC_model)
 ```
-In class we saw different techniques and criterion to find best model. You can use any
-method and technique you prefer (e.g., backward elimination using AIC or stepwise regression using AIC or backward elimination using BIC criterion) to find the best model
-and document your observations. 
+
 
 ## 4. Summarize your report (for the final deliverable).
 

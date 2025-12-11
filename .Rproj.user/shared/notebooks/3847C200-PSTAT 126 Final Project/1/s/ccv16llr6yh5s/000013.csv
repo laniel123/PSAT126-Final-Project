@@ -1,8 +1,0 @@
-"0",""
-"0","# Table"
-"0","hist(sample_df$table,"
-"0","     main = ""Diamond Tables"","
-"0","     xlab = ""Table"","
-"0","     ylab = ""Frequency"","
-"0","     col = ""blue"","
-"0","     border = ""black"")"
