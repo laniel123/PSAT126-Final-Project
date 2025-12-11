@@ -122,7 +122,7 @@ summary(diamondmodel)
 
 ## 5. comment on anything of interest that occurred in this part. Were the data approximately what you expected, or did some of the results surprise you?
 
-During the modeling phase, most results lined up with expectations, especially how carat dominated the model. The main surprise was that only lower color grades (H–J) were statistically significant while the rest aren't significant, while table was insignificant once other predictors were included. This confirmed general pricing patterns and displayed real market expectations while clarifying which attributes hold the most weight in pricing.
+The descriptive analysis revealed patterns that aligned closely with typical diamond market behavior. Carat and price were both heavily right-skewed, with most observations concentrated in the lower range and a long tail of larger stones and high-priced diamonds extending outward. Depth and table measurements were far more constrained, clustering around common industry standards, and their distributions showed no unusual irregularities. The boxplots highlighted strong and consistent relationships between the categorical variables and price, where higher cut and color grades corresponded to noticeably higher median price levels. Among the numeric predictors, correlations were generally weak, though there was a moderate negative association between depth and table, which is reasonable given the geometric trade offs in diamond proportions. Aside from a few expected high-end values, no influential anomalies appeared in the sample, suggesting the data are representative of real-world pricing patterns. Overall, even before model fitting, it was clear that carat, cut, and color play major roles in explaining price variation.
 
 # Part 2: Simple Linear Regression (continuation of Part 1)
 
@@ -165,7 +165,7 @@ The Prediction Interval:
 predict(model_simple, new_carat, interval = "prediction")
 ```
 
-Interpretation for PI: For a single new diamond of the same carat size, the predicted price is also 5550 dollars, but the 95% prediction interval is much wider: (2420, 8680). This wider interval is accunting not only for uncertainty in estimating the regression line but also for the natural variability in individual diamond prices. This highlights that while the mean price can be estimated precisely, individual diamond prices can vary substantially despite having the same carat level.
+Interpretation for PI: For a single new diamond of the same carat size, the predicted price is also 5550 dollars, but the 95% prediction interval is much wider: (2420, 8680). This wider interval is accounting not only for uncertainty in estimating the regression line but also for the natural variability in individual diamond prices. This highlights that while the mean price can be estimated precisely, individual diamond prices can vary substantially despite having the same carat level.
 
 Plot with fitted regression line:
 ```{r}
@@ -251,7 +251,9 @@ AIC_model <- stepAIC(best_model,
 #Summary 
 summary(AIC_model)
 ```
+The variable cut was eliminated from the model using the stepwise AIC approach. The improved model fit under the AIC criterion is demonstrated by the modified model's lower AIC value (AIC = –1108.76). The model still includes the predictors carat, depth, table, color, and clarity. Carat continues to be the best predictor, and the majority of clarity and color levels have statistically significant influence on log(price).
 
+With fewer predictors, the final model retains a high adjusted R^2 value (0.8959), indicating that the reduced model explains almost as much variability as the full model. The chosen model strikes a balance between model fit and parsimony because AIC penalizes model complexity.
 
 ## 4. Summarize your report (for the final deliverable).
 
