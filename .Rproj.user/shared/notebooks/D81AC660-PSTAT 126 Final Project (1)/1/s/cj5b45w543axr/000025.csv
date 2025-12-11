@@ -1,0 +1,8 @@
+"0",""
+"0","# Price"
+"0","hist(sample_df$price,"
+"0","     main = ""Diamond Prices"","
+"0","     xlab = ""Price "","
+"0","     ylab = ""Frequency"","
+"0","     col = ""darkgreen"","
+"0","     border = ""black"")"

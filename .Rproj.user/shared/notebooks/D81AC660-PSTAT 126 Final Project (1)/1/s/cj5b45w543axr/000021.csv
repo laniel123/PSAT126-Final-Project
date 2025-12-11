@@ -1,0 +1,8 @@
+"0",""
+"0","# Depth"
+"0","hist(sample_df$depth,"
+"0","     main = ""Diamond Depths"","
+"0","     xlab = ""Depth"","
+"0","     ylab = ""Frequency"","
+"0","     col = ""purple"","
+"0","     border = ""black"")"
