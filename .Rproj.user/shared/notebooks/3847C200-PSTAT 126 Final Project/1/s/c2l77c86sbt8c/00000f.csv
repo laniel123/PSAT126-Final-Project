@@ -1,0 +1,4 @@
+"0","plot(sample_df$carat, sample_df$price,"
+"0","     xlab = ""Carat"","
+"0","     ylab = ""Price"","
+"0","     main = ""Price vs Carat with Regression Line"")"

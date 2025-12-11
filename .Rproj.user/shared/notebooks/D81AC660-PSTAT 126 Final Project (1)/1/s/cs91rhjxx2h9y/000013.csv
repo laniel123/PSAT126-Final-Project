@@ -1,0 +1,5 @@
+"0",""
+"0",""
+"0","boxplot(price ~ cut, "
+"0","        data = sample_df,"
+"0","        main = ""Price by Cut"")"
